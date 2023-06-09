@@ -1,0 +1,35 @@
+html{ background-color: #C1D0B5;
+    color:rgb(152, 62, 17);}
+
+header{
+    text-align: center;
+}
+
+.resultados{
+border: solid 2px #c2d8b5;
+width: 150px;
+margin: 15px;
+padding: 10px;
+background-color: #99A98F;
+}
+
+footer{
+    color:rgb(172, 98, 7);
+}
+
+textarea[name="user-input"]{
+    border: solid;
+    margin: 2px;
+    padding: 20px;
+    color:rgb(152, 62, 17);
+    box-shadow: 2px 2px 5px;
+    background-color: #99A98F;
+    font-size: 20px;
+}
+
+#reset-button{
+background-color:rgb(152, 62, 17);
+margin: 20px;
+padding: 10px 20px;
+color:  #c2d8b5;
+}
