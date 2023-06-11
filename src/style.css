@@ -6,6 +6,8 @@ header{
 }
 
 .resultados{
+    
+
 border: solid 2px #c2d8b5;
 width: 150px;
 margin: 15px;
@@ -18,6 +20,7 @@ footer{
 }
 
 textarea[name="user-input"]{
+    position: absolute;top: 100px; left: 300px;
     border: solid;
     margin: 2px;
     padding: 20px;
@@ -28,6 +31,7 @@ textarea[name="user-input"]{
 }
 
 #reset-button{
+    position: absolute;top: 400px; left: 300px;
 background-color:rgb(152, 62, 17);
 margin: 20px;
 padding: 10px 20px;
