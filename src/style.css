@@ -31,6 +31,7 @@ padding: 10px;
 background-color: #99A98F;
 }
 textarea[name="user-input"]{
+    font-size: 25px: color: #033736;
     border: solid;
     margin: 2px;
     padding: 20px;
@@ -54,17 +55,15 @@ textarea[name="user-input"]{
     color:  #c2d8b5;
 }
 footer{
-    
+    text-align:center;
     color:#033736;
-    text-align: center;
     clear: both;
     left: 0;
     bottom: 0;
     width: 60%;
-    height: 20px;
+    height: 60px;
 }
 footer li{
-    
     display: inline-block;
     font-size: 25px;
 }

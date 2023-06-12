@@ -11,19 +11,19 @@ const analyzer = {
     return "Caracteres sin espacios: " + cadenaSinEspacios.length
   },
   getAverageWordLength: (text) => {    
-    return  "Promedio Longitud: " + text.replace(/[^\w]/gi,"").length / text.split(' ').length
+    return  "Promedio Longitud: " +  (text.replace(/[^\w]/gi,"").length / text.split(' ').length).toFixed(2)
 
   },
   getNumberCount: (text) => {
     let listaPalabras = text.split(' ')
     let listaNumeros = [];
     for (let i = 0; i < listaPalabras.length; i++) {
-      if (listaPalabras[i].match(/[0-9]+/g)) { // SI el elemento i tiene un numero
-        listaNumeros.push(parseInt(listaPalabras[i]))// conviertelo a numero con parseint y guardalo en Listadepalabras
-      } else {
-        console.log('no es numero');
-      }
-      
+    let numeroPars=parseInt(listaPalabras[i])
+    if (!isNaN(numeroPars)) { // SI el elemento i tiene un numero
+    listaNumeros.push(numeroPars)// conviertelo a numero con parseint y guardalo en Listadepalabras
+    } else {
+    console.log('no es numero');
+    }
     }
     return "Números: " + listaNumeros.length;
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
@@ -31,17 +31,15 @@ const analyzer = {
   getNumberSum: (text) => {
     let listaPalabras = text.split(' ')
     let listaNumeros = [];
-
     listaPalabras.forEach(element => {
-      if (element.match(/[0-9]+/g)) { // SI el elemento i tiene un numero
-        listaNumeros.push(parseInt(element))// conviertelo a numero con parseint y guardalo en Listadepalabras
-      }
+    if (element.match(/[0-9]+/g)) { // SI el elemento i tiene un numero listaNumeros.push(parseInt(element))// conviertelo a numero con parseint y guardalo en Listadepalabras
+    }
     });
 
     let suma=0;
 
     listaNumeros.forEach(element => {
-      suma+=element
+    suma+=element
     });
     return "Suma números: " + suma;
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
