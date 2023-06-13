@@ -11,7 +11,17 @@ const analyzer = {
     return "Caracteres sin espacios: " + cadenaSinEspacios.length
   },
   getAverageWordLength: (text) => {
-    return (text.replace(/[^\w]/gi, "").length / text.split(' ').length).toFixed(2)
+    // return (text.replace(/[^\w]/gi, "").length / text.split(' ').length).toFixed(2)
+    let palabras = text.split(" ");
+    let totalLetras = 0;
+    for (var i = 0; i < palabras.length; i++) {
+      totalLetras += palabras[i].length;
+      console.log(palabras[i] + ' su longitud es ' + palabras[i].length);
+    }
+    var promedio = totalLetras / palabras.length;
+    console.log();
+    return promedio.toFixed(2);
+
   },
 
   getNumberCount: (text) => {
@@ -21,15 +31,13 @@ const analyzer = {
       let numeroPars = parseInt(listaPalabras[i])
       if (!isNaN(numeroPars)) { // SI el elemento i tiene un numero
         listaNumeros.push(numeroPars)// conviertelo a numero con parseint y guardalo en Listadepalabras
-      } else {
-        console.log('no es numero');
       }
     }
     return "Números: " + listaNumeros.length;
+
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberSum: (text) => {
-    console.log(text)
     let listaPalabras = text.split(' ')
     let listaNumeros = [];
 
