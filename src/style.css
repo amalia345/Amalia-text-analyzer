@@ -1,72 +1,78 @@
-html{ background-color: #62806c;
-    color:rgb(152, 62, 17);}
+html {
+    background-color: #62806c;
+    color: rgb(152, 62, 17);
+}
 
-header{
+header {
     text-align: center;
 }
 
-section{
+section {
     width: 25%;
-    float: left;
+    float: left; /*se va  ala izquierda, saledel flujo de la paguna */
     padding-left: 17%;
 }
 
-article{
+article {
     width: 25%;
     height: 480px;
     float: left;
 }
-section ul{
+
+section ul {
     height: 420px;
 }
-section li{
+
+section li {
     font-size: 20px;
-    list-style-type: none;
-}
-.resultados{
-border: solid 2px #033736;
-width: 250px;
-margin: 18px;
-padding: 10px;
-background-color: #99A98F;
-}
-textarea[name="user-input"]{
-    font-size: 25px: color: #033736;
-    border: solid;
-    margin: 2px;
-    padding: 20px;
-    color:rgb(152, 62, 17);
-    box-shadow: 2px 2px 5px;
-    background-color: #99A98F;
-    font-size: 20px;
-    width: 300px;
-    height: 400px;
+    list-style-type: none; /* Le quita los circulitos a la lista*/
 }
 
-#reset-button{ 
-    width:180px ;
+.resultados {
+    border: solid 2px #033736;
+    width: 250px;
+    margin: 18px;
+    padding: 10px;
+    background-color: #99A98F;
+}
+
+textarea[name="user-input"] {
+    font-size: 25px;
+    color:  rgb(179, 78, 28);
+    border: solid;
+    padding: 20px;
+    box-shadow: 2px 2px 5px;
+    background-color: #99A98F;
+    width: 300px;
+    height: 400px;
+    outline: none;
+}
+
+#reset-button {
+    width: 180px;
     height: 55px;
     font-size: 22px;
     border: none;
     outline: none;
-    background-color:rgb(152, 62, 17);
+    background-color: rgb(152, 62, 17);
     margin: 20px;
-    padding: 10px;
-    color:  #c2d8b5;
+    padding: 12px;
+    color: #c2d8b5;
 }
-footer{
-    text-align:center;
-    color:#033736;
-    clear: both;
-    left: 0;
-    bottom: 0;
-    width: 60%;
+
+footer {
+    text-align: center;
+    color: #033736;
+    width: 80%;
     height: 60px;
 }
-footer li{
-    display: inline-block;
+
+footer li {
+    display: inline-block;  
     font-size: 25px;
 }
 
 
-a {color:#033736;}
+a {
+    color: #033736;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Analizador de texto</title>
@@ -11,32 +12,36 @@
     <h1>ANALIZADOR DE TEXTO</h1>
     <h3>Esta página analiza texto y te devuelve los parametros resultantes.</h3>
   </header>
-<section> 
-  <ul class="resultados">
-    <li class="resultados">Caracteres: 0</li>
-    <li class="resultados">Caracteres sin espacio: 0</li>
-    <li class="resultados">Palabras: 0</li>
-    <li class="resultados"> Números: 0</li>
-    <li class="resultados"> Suma Números: 0</li>
-    <li class="resultados"> Promedio Longitud: 0</li>
-  </ul>
-</section>
 
-<article>
+  <section>
+    <ul class="resultados">  <!-- Lista no ordenada -->
+      <li class="resultados">Caracteres: 0</li> <!-- elementos de la lista -->
+      <li class="resultados">Caracteres sin espacio: 0</li>
+      <li class="resultados">Palabras: 0</li>
+      <li class="resultados">Números: 0</li>
+      <li class="resultados">Suma Números: 0</li>
+      <li class="resultados">Promedio Longitud: <span id="promedio">0</span></li>
+    </ul>
+  </section>
+
+  <article>
     <textarea name="user-input" placeholder="Escribe tu texto..."></textarea>
-</article>
+  </article>
 
   <button id="reset-button">🗑️ Borrar</button>
+
   <footer>
     <ul>
-      <li> 
-        <p>AMALIA SOTO</p>
+      <li>
+        <p>AMALIA SOTO ➡️</p>
       </li>
-      <li> 
-        <a href="https://github.com/amalia345" target="_blank"> Haz click para ir a github</a>
+      <li>
+        <a href="https://github.com/amalia345" target="_blank"> Mi Github</a>
       </li>
     </ul>
   </footer>
-<script src="index.js" type="module"></script>
+
+  <script src="index.js" type="module"></script>
 </body>
-</html> 
+
+</html>
