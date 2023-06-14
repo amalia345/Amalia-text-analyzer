@@ -11,38 +11,33 @@ const analyzer = {
     return "Caracteres sin espacios: " + cadenaSinEspacios.length
   },
   getAverageWordLength: (text) => {
-    // return (text.replace(/[^\w]/gi, "").length / text.split(' ').length).toFixed(2)
     let palabras = text.split(" ");
     let totalLetras = 0;
-    for (var i = 0; i < palabras.length; i++) {
+    for (let i = 0; i < palabras.length; i++) {
       totalLetras += palabras[i].length;
     }
-    var promedio = totalLetras / palabras.length;
+    let promedio = totalLetras / palabras.length;
     return promedio.toFixed(2);
-
   },
-
-  getNumberCount: (text) => { 
-      let listaPalabras = text.split(' '); // separamos en substrings
-      let cantidadNumeros = 0; //contador metemos la cantidad de numeros que hay en la lista
-      for (let i = 0; i < listaPalabras.length; i++) { // ciclo que revisa cada elemnto de la lista de palabras
-        if (!isNaN(listaPalabras[i]) ){ //parseamos todos los elemntos y checamos cuales si fueron un numero y cuales NAN
-          cantidadNumeros++; // si no e snan aumentmaos el contador de  numeros
-        }
-      }
-      return "Números: " + cantidadNumeros;
-    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-  },
-  getNumberSum: (text) => {
-    let listaDeNumeros = text.match(/\b\d+(?:\.\d+)?\b/g); 
-    let suma = 0;
-    if (listaDeNumeros) {
-      for (let i = 0; i < listaDeNumeros.length; i++) {
-        suma += parseFloat(listaDeNumeros[i]);
+  getNumberCount: (text) => {
+    let listaPalabras = text.split(' ');
+    let cantidadNumeros = 0;
+    for (let i = 0; i < listaPalabras.length; i++) {
+      if (!isNaN(listaPalabras[i])) {
+        cantidadNumeros++;
       }
     }
-    return "Suma números: " + suma ;
+    return "Números: " + cantidadNumeros;
   },
+  getNumberSum: (text) => {
+    const listaPalabras = text.split(' ');
+    let suma = 0;
+    for (let i = 0; i < listaPalabras.length; i++) {
+      if (!isNaN(listaPalabras[i])) {
+        suma = suma + parseFloat(listaPalabras[i])
+      }
+    }
+    return "Suma números: " + suma;
+  }
 };
-
 export default analyzer;
