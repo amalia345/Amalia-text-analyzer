@@ -28,7 +28,7 @@ section li {
     list-style-type: none; /* Le quita los circulitos a la lista*/
 }
 
-.resultados {
+.resultados {/* Selector de clase con punto*/
     border: solid 2px #033736;
     width: 250px;
     margin: 18px;
@@ -36,7 +36,7 @@ section li {
     background-color: #99A98F;
 }
 
-textarea[name="user-input"] {
+textarea[name="user-input"] {/* Selector de atributo */
     font-size: 25px;
     color:  rgb(179, 78, 28);
     border: solid;
@@ -48,9 +48,9 @@ textarea[name="user-input"] {
     outline: none;
 }
 
-#reset-button {
-    width: 180px;
+#reset-button {/* Selector de id*/
     height: 55px;
+    width: 180px;
     font-size: 22px;
     border: none;
     outline: none;

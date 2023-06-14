@@ -1,5 +1,5 @@
 const analyzer = {
-  getWordCount: (text) => {// utilce split para crear una variable que separa con espacio (' ') para crear un arreglo de strings y darle.lenght
+  getWordCount: (text) => {// utilce split para crear una variable que separa con espacio (' ') para crear na lista de strings y darle.lenght
     let palabrasSeparadas = text.split(' ') //separa el string usando espacio como identificador 
     return "Palabras :" + palabrasSeparadas.length;
   },
@@ -7,7 +7,7 @@ const analyzer = {
     return "Caracteres: " + text.length
   },
   getCharacterCountExcludingSpaces: (text) => {
-    let cadenaSinEspacios = text.replace(/[^\w]/gi, "")//Expresion regular w elimina caracteres especiales y espacios, g de agarra todas, i agarra minusculas y mayosculas
+    let cadenaSinEspacios = text.replace(/[^\w]/gi, "")//Expresion regular w elimina signos y espacios, g agarra todas, i agarra minusculas y mayosculas
     return "Caracteres sin espacios: " + cadenaSinEspacios.length
   },
   getAverageWordLength: (text) => {
