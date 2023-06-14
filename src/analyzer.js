@@ -16,44 +16,32 @@ const analyzer = {
     let totalLetras = 0;
     for (var i = 0; i < palabras.length; i++) {
       totalLetras += palabras[i].length;
-      console.log(palabras[i] + ' su longitud es ' + palabras[i].length);
     }
     var promedio = totalLetras / palabras.length;
-    console.log();
     return promedio.toFixed(2);
 
   },
 
-  getNumberCount: (text) => {
-    let listaPalabras = text.split(' ')
-    let listaNumeros = [];
-    for (let i = 0; i < listaPalabras.length; i++) {
-      let numeroPars = parseInt(listaPalabras[i])
-      if (!isNaN(numeroPars)) { // SI el elemento i tiene un numero
-        listaNumeros.push(numeroPars)// conviertelo a numero con parseint y guardalo en Listadepalabras
+  getNumberCount: (text) => { 
+      let listaPalabras = text.split(' '); // separamos en substrings
+      let cantidadNumeros = 0; //contador metemos la cantidad de numeros que hay en la lista
+      for (let i = 0; i < listaPalabras.length; i++) { // ciclo que revisa cada elemnto de la lista de palabras
+        if (!isNaN(listaPalabras[i]) ){ //parseamos todos los elemntos y checamos cuales si fueron un numero y cuales NAN
+          cantidadNumeros++; // si no e snan aumentmaos el contador de  numeros
+        }
       }
-    }
-    return "Números: " + listaNumeros.length;
-
+      return "Números: " + cantidadNumeros;
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberSum: (text) => {
-    let listaPalabras = text.split(' ')
-    let listaNumeros = [];
-
-    listaPalabras.forEach(palabra => { //ciclo for/
-      if (!isNaN(palabra)) { // SI el elemento i tiene un numero
-        listaNumeros.push(parseFloat(palabra))// conviertelo a numero con parseint y guardalo en Listadepalabras
-      }// push es guardaar en unalista
-    });
-
+    let listaDeNumeros = text.match(/\b\d+(?:\.\d+)?\b/g); 
     let suma = 0;
-
-    listaNumeros.forEach(numero => {
-      suma += numero
-    });
-    return "Suma números: " + suma;
-    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    if (listaDeNumeros) {
+      for (let i = 0; i < listaDeNumeros.length; i++) {
+        suma += parseFloat(listaDeNumeros[i]);
+      }
+    }
+    return "Suma números: " + suma ;
   },
 };
 

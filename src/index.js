@@ -9,6 +9,7 @@ const promedioSpan = document.getElementById("promedio") // no existe el id en H
 cajitaText.addEventListener('keyup',analizar)
 eliminar.addEventListener('click',refrescar)
 
+
 function analizar() {
     let palabra1 = cajitaText.value
     listaMetricas[2].innerHTML=analyzer.getWordCount(palabra1)
@@ -19,6 +20,11 @@ function analizar() {
     listaMetricas[4].innerHTML=analyzer.getNumberSum(palabra1)
 }
 function refrescar() {
-    cajitaText.value=""// agarramos el text area y le metemos unstring vacio
-  //  window.location.reload();// refresca la ventana // 
+    cajitaText.value=""
+    listaMetricas[2].innerHTML='Palabras: 0'
+    listaMetricas[0].innerHTML='Caracteres: 0'
+    listaMetricas[1].innerHTML='Caracteres sin espacio: 0'
+    promedioSpan.innerHTML='0'
+    listaMetricas[3].innerHTML='Números: 0'
+    listaMetricas[4].innerHTML='Suma números: 0'
 }
