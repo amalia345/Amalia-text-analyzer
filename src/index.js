@@ -4,6 +4,11 @@ const cajitaText = document.querySelector("textarea[name='user-input']")
 const listaMetricas = document.querySelectorAll(".resultados li") // const es una variable
 const eliminar = document.getElementById("reset-button")
 
+const caracterSpan = document.getElementById("caracter")
+const caracterSinSpan = document.getElementById("caracterSin") 
+const palabrasSpan = document.getElementById("palabras") 
+const numerosSpan = document.getElementById("numeros") 
+const sumaSpan = document.getElementById("suma") 
 const promedioSpan = document.getElementById("promedio") 
 
 cajitaText.addEventListener('keyup',analizar) //LLama a la funcion
@@ -12,12 +17,12 @@ eliminar.addEventListener('click',refrescar)
 
 function analizar() {
   const palabra1 = cajitaText.value //Let puede cambiar
-  listaMetricas[2].innerHTML=analyzer.getWordCount(palabra1)
-  listaMetricas[0].innerHTML=analyzer.getCharacterCount(palabra1) 
-  listaMetricas[1].innerHTML=analyzer.getCharacterCountExcludingSpaces(palabra1)
+  palabrasSpan.innerHTML=analyzer.getWordCount(palabra1)
+  caracterSpan.innerHTML=analyzer.getCharacterCount(palabra1) 
+  caracterSinSpan.innerHTML=analyzer.getCharacterCountExcludingSpaces(palabra1)
   promedioSpan.innerHTML=analyzer.getAverageWordLength(palabra1) // fallaba esta linea porque faltaba el id en el html 
-  listaMetricas[3].innerHTML=analyzer.getNumberCount(palabra1)
-  listaMetricas[4].innerHTML=analyzer.getNumberSum(palabra1)
+  numerosSpan.innerHTML=analyzer.getNumberCount(palabra1)
+  sumaSpan.innerHTML=analyzer.getNumberSum(palabra1)
 }
 function refrescar() {
   cajitaText.value=""

@@ -1,14 +1,14 @@
 const analyzer = {
   getWordCount: (text) => {// utilce split para crear una variable que separa con espacio (' ') para crear na lista de strings y darle.lenght
     const palabrasSeparadas = text.split(' ') //separa el string usando espacio como identificador 
-    return "Palabras :" + palabrasSeparadas.length;
+    return  palabrasSeparadas.length;
   },
   getCharacterCount: (text) => {
-    return "Caracteres: " + text.length
+    return  text.length
   },
   getCharacterCountExcludingSpaces: (text) => {
     const cadenaSinEspacios = text.replace(/[^\w]/gi, "")//Expresion regular w elimina signos y espacios, g agarra todas, i agarra minusculas y mayosculas
-    return "Caracteres sin espacios: " + cadenaSinEspacios.length
+    return  cadenaSinEspacios.length
   },
   getAverageWordLength: (text) => {
     const palabras = text.split(" ");
@@ -17,7 +17,7 @@ const analyzer = {
       totalLetras += palabras[i].length;
     }
     const promedio = totalLetras / palabras.length;
-    return promedio.toFixed(2);
+    return parseFloat(promedio.toFixed(2));
   },
   getNumberCount: (text) => {
     const listaPalabras = text.split(' ');
@@ -27,7 +27,7 @@ const analyzer = {
         cantidadNumeros++;
       }
     }
-    return "Números: " + cantidadNumeros;
+    return  cantidadNumeros;
   },
   getNumberSum: (text) => {
     const listaPalabras = text.split(' ');
@@ -37,7 +37,7 @@ const analyzer = {
         suma = suma + parseFloat(listaPalabras[i])
       }
     }
-    return "Suma números: " + suma;
+    return suma;
   }
 };
 export default analyzer;
