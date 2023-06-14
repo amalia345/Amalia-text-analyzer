@@ -27,14 +27,23 @@ section li {
     font-size: 20px;
     list-style-type: none; /* Le quita los circulitos a la lista*/
 }
-
-.resultados {/* Selector de clase con punto*/
-    border: solid 2px #033736;
+.resultados{
+    border: solid 2px#033736;
     width: 250px;
     margin: 18px;
     padding: 10px;
-    background-color: #99A98F;
-}
+    background:#99A98F;
+    }
+/*.resultados{ Selector de clase con punto
+    width: 250px;
+    height: auto;
+    margin: 18px;
+    padding: 10px;
+    border: solid 2px #033736;
+    box-sizing: border-box;
+    background:#99A98F;
+
+}*/
 
 textarea[name="user-input"] {/* Selector de atributo */
     font-size: 25px;
