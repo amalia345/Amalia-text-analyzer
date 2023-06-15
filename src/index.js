@@ -1,7 +1,6 @@
-import analyzer from './analyzer.js'; // Objeto analuzer
+import analyzer from './analyzer.js'; // introduzco el objeto analyzer desde el archivo analyzer.js
 //Nunca cambiará con const
 const cajitaText = document.querySelector("textarea[name='user-input']") 
-const listaMetricas = document.querySelectorAll(".resultados li") // const es una variable
 const eliminar = document.getElementById("reset-button")
 
 const caracterSpan = document.getElementById("caracter")
@@ -11,13 +10,12 @@ const numerosSpan = document.getElementById("numeros")
 const sumaSpan = document.getElementById("suma") 
 const promedioSpan = document.getElementById("promedio") 
 
-cajitaText.addEventListener('keyup',analizar) //LLama a la funcion
-eliminar.addEventListener('click',refrescar)
+cajitaText.addEventListener('keyup',analizar) //Cada que se presione una tecla dentro de cajatex llamamos a la funcion analizar 
+eliminar.addEventListener('click',refrescar)//Cada que se de un clik en el boton eliminar llamamos a la funcion refrescar 
 
-
-function analizar() {
-  const palabra1 = cajitaText.value //Let puede cambiar
-  palabrasSpan.innerHTML=analyzer.getWordCount(palabra1)
+function analizar() {//Let puede cambiar, const nunca va a cambiar
+  const palabra1 = cajitaText.value //Palabra 1 es la variable donde guardamos el valor de lo que escribe el usiuario
+  palabrasSpan.innerHTML=analyzer.getWordCount(palabra1)//Inserta en html el resultado de la funcion
   caracterSpan.innerHTML=analyzer.getCharacterCount(palabra1) 
   caracterSinSpan.innerHTML=analyzer.getCharacterCountExcludingSpaces(palabra1)
   promedioSpan.innerHTML=analyzer.getAverageWordLength(palabra1) // fallaba esta linea porque faltaba el id en el html 
@@ -26,10 +24,10 @@ function analizar() {
 }
 function refrescar() {
   cajitaText.value=""
-  listaMetricas[2].innerHTML='Palabras: 0' // Insertar a html 
-  listaMetricas[0].innerHTML='Caracteres: 0'
-  listaMetricas[1].innerHTML='Caracteres sin espacio: 0'
+  palabrasSpan.innerHTML='0'
+  caracterSpan.innerHTML='0'
+  caracterSinSpan.innerHTML='0'
   promedioSpan.innerHTML='0'
-  listaMetricas[3].innerHTML='Números: 0'
-  listaMetricas[4].innerHTML='Suma números: 0'
+  numerosSpan.innerHTML='0'
+  sumaSpan.innerHTML='0'
 }

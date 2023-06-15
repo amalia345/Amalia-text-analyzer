@@ -1,9 +1,9 @@
-const analyzer = {
+const analyzer = {//Se empieza el objeto analyzer
   getWordCount: (text) => {// utilce split para crear una variable que separa con espacio (' ') para crear na lista de strings y darle.lenght
     const palabrasSeparadas = text.split(' ') //separa el string usando espacio como identificador 
     return  palabrasSeparadas.length;
   },
-  getCharacterCount: (text) => {
+  getCharacterCount: (text) => {//(text) es el parametro que recibe la funcion, en este caso el texto del usuario
     return  text.length
   },
   getCharacterCountExcludingSpaces: (text) => {
