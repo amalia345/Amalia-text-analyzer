@@ -22,7 +22,7 @@ este proyecto NO está permitido usar librerías o frameworks.
 
 ## Planeción.
 Hice un diagrama de Gantt para poder ilustrar mi proceso al realizar cada actividad dentro de un tiempo determinado.
-![Un diagrama de Gantt](https://github.com/Laboratoria/bootcamp/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
+![Un diagrama de Gantt]([https://github.com/Laboratoria/bootcamp/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113](https://github.com/amalia345/Amalia-text-analyzer/blob/main/Esqueleto%20en%20Html.png))
 
 Hice un boceta para tener una idea de como queria que se viera mi pagina.
 ![Imagen del boceto](Imagendelboceto.jpg)
@@ -33,8 +33,9 @@ La programacion basica la logre cumplir en mis tiempos establecido con pocas dif
 
 ## Aprendizajes.
 
-En HTML aprendi a usar <UL> y <LI> de manera correcta, a utilizar links con <a> y HTML semantico.
+En HTML aprendi a usar UL y LI de manera correcta, a utilizar links con a con href y HTML semantico.
 En CSS aprendi a usar selectores, de clases, de id y de atributo.
 En JS aprendi a usar el ciclo for, a utilizar funciones y llamrlas en otra parte del codigo, a pasar parametros a las funciones como el texto que escribe el usuario, a modificar strings con metodos somo split, a utilizar expresiones regulares, a convertir strings a numeros con ParseInt y ParseFloat.
+Aprendi a seguir test especificios y modificar las cosas para lograr pasarlos.
 
 * [`src/index.html`](./src/index.html): este es el punto de entrada al programa
