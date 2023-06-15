@@ -25,7 +25,7 @@ Hice un diagrama de Gantt para poder ilustrar mi proceso al realizar cada activi
 ![Un diagrama de Gantt](https://github.com/amalia345/Amalia-text-analyzer/blob/main/Esqueleto%20en%20Html.png)
 
 Hice un boceta para tener una idea de como queria que se viera mi pagina.
-![Imagen del boceto](Imagendelboceto.jpg)
+![Imagen del boceto](https://github.com/amalia345/Amalia-text-analyzer/blob/main/new%20video.jpg)
 
 ## Dificultades en el proceso.
 
@@ -39,3 +39,5 @@ En JS aprendi a usar el ciclo for, a utilizar funciones y llamrlas en otra parte
 Aprendi a seguir test especificios y modificar las cosas para lograr pasarlos.
 
 * [`src/index.html`](./src/index.html): este es el punto de entrada al programa
+
+* ![Imagen del boceto](https://github.com/amalia345/Amalia-text-analyzer/blob/main/videoReducido.mp4)
