@@ -3,7 +3,7 @@
 ## Índice de Analizadore de texto.
 
 * Objetivos
-* Inea inicial.
+* Planeacion
 * Organización
 * Dificultades en el proceso.
 * Analisis de resultado.
@@ -11,91 +11,20 @@
 
 ***
 ## Ojetivos:
-
-Un analizador de texto es una aplicación para extraer información útil de un
-texto utilizando diversas técnicas, como el procesamiento del lenguaje
-natural (NLP), el aprendizaje automático (ML) y el análisis estadístico.
-Estas aplicaciones pueden proporcionar una variedad de métricas que brindan
-información básica sobre la longitud y la estructura del texto como por
-ejemplo, el conteo de palabras, el conteo de caracteres, el conteo de
-oraciones y el conteo de párrafos. Otras métricas incluyen el análisis
-de sentimientos, que utiliza técnicas de NLP para determinar el tono
-general positivo, negativo o neutral del texto, y el análisis de
-legibilidad, que utiliza algoritmos para evaluar la complejidad y la
-legibilidad del texto.
-
-En general, las aplicaciones de análisis de texto brindan información
-valiosa y métricas sobre los textos que pueden ayudar a los usuarios a
-tomar decisiones informadas y sacar conclusiones significativas.
-Mediante el uso de estas herramientas de análisis, los usuarios pueden
-obtener una comprensión más profunda de los textos.
-
-## 3. Funcionalidades
-
-En este proyecto implementarás un analizador de texto web para calcular
-y mostrar métricas de un texto enviado por el usuario.
-
-El listado de funcionalidades es el siguiente:
-
 1. La aplicación debe permitir al usuario ingresar un texto escribiéndolo
 en un cuadro de texto.
+2. Crear un analizador de texto que pueda dar como resultante distintos paremetros, y muestre contadores.
+3. Debe de tener 6 parametro Caracteres y el siguiente orden; Caracteres sin espacio, Suma de números, Número de palabras, 
+Cantidad de números y Longitud ppromedio de las palabras.
+4. Los contadores tienen que funcionar al mismo tiempo y sin errores.
+5. Crear un diseño de la página ordenado, moderno sencillo y funcional.
+6. La estructura basica del programa debe ser entendible.
+7. La lógica del proyecto debe estar implementada completamente en JavaScript. En
+este proyecto NO está permitido usar librerías o frameworks.
 
-2. La aplicación debe calcular las siguientes métricas y actualizar el
-resultado en tiempo real a medida que el usuario escribe su texto:
+Planeción.
+Hice un diagrama de Gantt para poder ilustrar mi proceso al realizar cada actividad dentro de un tiempo determinado.
 
-    - **Recuento de palabras**: la aplicación debe poder contar el número de
-    palabras en el texto de entrada y mostrar este recuento al usuario
-    - **Recuento de caracteres**: la aplicación debe poder contar el número de
-    caracteres en el texto de entrada, incluidos espacios y signos de
-    puntuación, y mostrar este recuento al usuario.
-    - **Recuento de caracteres excluyendo espacios y signos de puntuación**:
-    la aplicación debe poder contar el número de caracteres en el texto de
-    entrada, excluyendo espacios y signos de puntuación, y mostrar este recuento
-    al usuario.  
-    - **Recuento de números**: la aplicación debe contar cúantos números hay en
-    el texto de entrada y mostrar este recuento al usuario.
-    - **Suma total de números**: la aplicación debe sumar todos los números que
-    hay en el texto de entrada y mostrar el resultado al usuario.
-    - **Longitud media de las palabras**: la aplicación debe calcular la
-    longitud media de las palabras en el texto de entrada y mostrársela al usuario.
-
-3. La aplicación debe permitir limpiar el contenido de la caja de texto haciendo
-clic en un botón.
-
-![Text analyzer demo](https://im4.ezgif.com/tmp/ezgif-4-a2884ea117.gif "Text analyzer demo")
-
-## 4. Boilerplate
-
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript
-puro también conocido como Vanilla JavaScript.
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene un _boilerplate_ con tests (pruebas). Un _boilerplate_
-es la estructura básica de un proyecto que sirve como un punto de partida con
-archivos y configuración inicial de dependencias y tests.
-
-El boilerplate que les damos contiene esta estructura:
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── analyzer.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── analyzer.spec.js
-```
-
-### Descripción de scripts / archivos
 
 * `README.md`: debes modificarlo para explicar la información necesaria para el
   uso de tu aplicación
