@@ -22,7 +22,7 @@ este proyecto NO está permitido usar librerías o frameworks.
 
 ## Planeción.
 Hice un diagrama de Gantt para poder ilustrar mi proceso al realizar cada actividad dentro de un tiempo determinado.
-![Un diagrama de Gantt]([https://github.com/Laboratoria/bootcamp/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113](https://github.com/amalia345/Amalia-text-analyzer/blob/main/Esqueleto%20en%20Html.png))
+![Un diagrama de Gantt]([https://github.com/Laboratoria/bootcamp/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113](https://github.com/amalia345/Amalia-text-analyzer/blob/main/Esqueleto%20en%20Html.png])
 
 Hice un boceta para tener una idea de como queria que se viera mi pagina.
 ![Imagen del boceto](Imagendelboceto.jpg)
