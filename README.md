@@ -39,5 +39,3 @@ En JS aprendi a usar el ciclo for, a utilizar funciones y llamrlas en otra parte
 Aprendi a seguir test especificios y modificar las cosas para lograr pasarlos.
 
 * [`src/index.html`](./src/index.html): este es el punto de entrada al programa
-
-* ![Imagen del boceto](https://github.com/amalia345/Amalia-text-analyzer/blob/main/videoReducido.mp4)
